@@ -1,0 +1,89 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img, 
+picture, 
+svg, 
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* CUSTOM PROPERTIES */
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root {
+    --clr-primary-400: hsl(75 94 57);
+
+    --clr-neutral-100: hsl(0 0 100);
+    --clr-neutral-700: hsl(0 0 20);
+    --clr-neutral-800: hsl(0 0 12);
+    --clr-neutral-900: hsl(0 0 8);
+
+    --fs-400: 0.875rem;
+    --fs-600: 1.25rem;
+
+    --fs-paragraph: var(--fs-400);
+    --fs-heading: var(--fs-600);
+
+    --ff-primary: Inter;
+
+    --fw-normal: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
+
+/* UTILITIES */
+
+.clr-primary-400 {
+    color: var(--clr-primary-400);
+}
+.clr-neutral-100 {
+    color: var(--clr-neutral-100);
+}
+.clr-neutral-700 {
+    color: var(--clr-neutral-700);
+}
+.clr-neutral-800 {
+    color: var(--clr-neutral-800);
+}
+.clr-neutral-900 {
+    color: var(--clr-neutral-900);
+}
+
+/* I like utlitity classes for text */
+
+.fs-heading {
+    font-size: var(--fs-heading);
+}
+.fs-paragraph {
+    font-size: var(--fs-paragraph);
+}
+.fw-normal {
+    font-weight: var(--fw-normal);
+}
+.fw-semibold {
+    font-weight: var(--fw-semibold);
+}
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+/* COMPONENTS */
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
