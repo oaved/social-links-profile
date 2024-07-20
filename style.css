@@ -147,5 +147,15 @@ li:hover a {
     color: var(--clr-neutral-900);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--clr-neutral-100);
+    position: absolute;
+    top: 95vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
